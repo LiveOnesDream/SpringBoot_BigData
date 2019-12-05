@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <!--第二种 xml +注解（无set方法）-->
+    <!--告知spring在创建容器时要扫描的包-->
+    <context:component-scan base-package="com.SpringAndSpark"></context:component-scan>
+
+
+    <!--第一种 xml+set 配置方法-->
+    <!--&lt;!&ndash;配置accountService&ndash;&gt;-->
+    <!--<bean id="accountService" class="com.SpringAndSpark.service.impl.AccountServiceImpl">-->
+    <!--<property name="accountDao" ref="accountDao"></property>-->
+    <!--</bean>-->
+
+    <!--&lt;!&ndash;配置accountDao&ndash;&gt;-->
+    <!--<bean id="accountDao" class="com.SpringAndSpark.dao.Impl.AccountDaoImpl">-->
+    <!--<property name="sparkConfig" ref="sparkConfig"></property>-->
+    <!--<property name="sparkUtils" ref="sparkUtils"></property>-->
+    <!--</bean>-->
+
+    <!--&lt;!&ndash;配置sparkConfig&ndash;&gt;-->
+    <!--<bean id="sparkConfig" class="com.SpringAndSpark.config.SparkConfig"></bean>-->
+
+    <!--&lt;!&ndash;配置sparkUtils&ndash;&gt;-->
+    <!--<bean id="sparkUtils" class="com.SpringAndSpark.utils.sparkUtils">-->
+    <!--<property name="sparkConfig" ref="sparkConfig"></property>-->
+    <!--</bean>-->
+
+</beans>
